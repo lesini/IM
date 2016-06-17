@@ -4,7 +4,8 @@ import mutations from './mutations'
 Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
-  	titleTotal:null
+  	titleTotal:null,
+    selfName:''
   },
   mutations
 })

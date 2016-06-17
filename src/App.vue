@@ -1,5 +1,4 @@
 <template>
-<<<<<<< HEAD
     <div class="chat">
       <div class="sidebar">
         <div class="self_info">
@@ -39,17 +38,6 @@ export default {
     sendMessage,
     messageList,
     userInfo
-=======
-    <hello-world></hello-world>
-</template>
-
-<script>
-import HelloWorld from './components/helloWorld'
-
-export default {
-  components: {
-    HelloWorld
->>>>>>> ed136dc86caadbe134b5b45de4c574a3b38f61d0
   }
 }
 </script>

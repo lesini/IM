@@ -1,16 +1,20 @@
 <template>
   <div class="self_info">
-    <img class="avatar" :src="avatar" alt="" />
-    <h4 class="current_name">{{currentName}}</4>
+    <img class="avatar" src="" alt="" />
+    <h4 class="current_name" @click="selfName">{{selfName}}</4>
   </div>
 </template>
 <script type="text/javascript">
+  import {selfName} from '../vuex/actions'
+  import store from '../vuex/store'
   export default {
-    data(){
-      return {
-        avatar:'',
-        currentName:'Tom'
-      }
+    vuex:{
+      actions:{
+        selfName
+      },
+      // getters:{
+        // selfName:state=>state.selfName
+      // }
     }
   }
 </script>
