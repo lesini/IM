@@ -1,23 +1,23 @@
 <template>
-    <div class="main">
-      <div class="info">
+    <div class="chat">
+      <div class="sidebar">
         <div class="self_info">
           <self-info></self-info>
         </div>
-        <div class="user_info">
-          <user-info></user-info>
+        <div class="friend_list">
+          <!-- <friend-list></friend-list> -->
         </div>
       </div>
-      <div class="list">
-        <div class="friend_list">
-          <friend-list></friend-list>
+      <div class="message">
+        <div class="user_info">
+          <!-- <user-info></user-info> -->
         </div>
         <div class="msg_box">
           <div class="msg_list">
-            <message-list></message-list>
+            <!-- <message-list></message-list> -->
           </div>
           <div class="send_box">
-            <send-message></send-message>
+            <!-- <send-message></send-message> -->
           </div>
         </div>
       </div>
@@ -52,6 +52,28 @@ body {
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+.chat{
+  width:60%;
+  height: 80%;
+  min-width: 800px;
+  min-height: 500px;
+  border-radius: 10px;
+  background-color: #eee;
+}
+.sidebar{
+  width:25%;
+  height:100%;
+  float: left;
+  background-color: #2e3238;
+  border-radius: 10px 0 0 10px;
+  opacity: .9;
+}
+.message{
+  border-radius: 0 10px 10px 0;
+  float: right;
+  width:75%;
+  height:100%;
 }
 
 </style>
