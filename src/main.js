@@ -8,12 +8,8 @@ Vue.use(Vuex)
 
 /* eslint-disable no-new */
 new Vue({
-<<<<<<< HEAD
   el: 'body',
-=======
-  el: '#app',
   // 把 store 对象提供给 “store” 选项，这可以把 store 的实例注入所有的子组件
   store:store,
->>>>>>> ed136dc86caadbe134b5b45de4c574a3b38f61d0
   components: { App }
 })
