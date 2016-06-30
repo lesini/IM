@@ -1,7 +1,7 @@
 <template>
   <div class="self_info">
-    <img class="avatar" src="" alt="" />
-    <h4 class="current_name" @click="selfName">{{selfName}}</4>
+    <img class="avatar" src="../assets/img/avatar01.jpg" alt="" />
+    <h4 class="current_name" @click="selfName">{{name}}</4>
   </div>
 </template>
 <script type="text/javascript">
@@ -12,15 +12,16 @@
       actions:{
         selfName
       },
-      // getters:{
-        // selfName:state=>state.selfName
-      // }
+      getters:{
+        name:state=>state.selfName
+      }
     }
   }
 </script>
 <style scoped>
 .self_info{
   height:120px;
+  padding-top:20px;
   text-align: center;
 }
 .self_info img{
@@ -30,5 +31,6 @@
 }
 .self_info h4{
   color:#f4f4f4;
+  line-height: 40px;
 }
 </style>

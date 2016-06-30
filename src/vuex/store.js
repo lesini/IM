@@ -5,7 +5,7 @@ Vue.use(Vuex)
 export default new Vuex.Store({
   state: {
   	titleTotal:null,
-    selfName:''
+    selfName:'Tom'
   },
   mutations
 })
